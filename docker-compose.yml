@@ -2,11 +2,12 @@ version: '2'
 
 services:
   evennia:
-    image: skrambelled/infinity
+    image: skrambelled/infinity:dev
     stdin_open: true
     tty: true
     ports:
-      - "4001-4002:4001-4002"
+      - "80:4001"
+      - "4002:4002"
       - "4000:4000"
     volumes:
       - .:/usr/src/game
