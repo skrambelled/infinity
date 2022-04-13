@@ -6,7 +6,8 @@ services:
     stdin_open: true
     tty: true
     ports:
-      - "4001-4002:4001-4002"
-      - "4000:4000"
+      - "80:4001"
+      - "4002:4002"
+      - "4003:4003"
     volumes:
       - .:/usr/src/game
